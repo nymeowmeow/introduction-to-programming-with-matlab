@@ -1,0 +1,3 @@
+function res = peri_sum(M)
+    res = sum(M(1, :)) + sum(M(end, :)) + sum(M(2:end-1,1)) ...
+        + sum(M(2:end-1,end));
